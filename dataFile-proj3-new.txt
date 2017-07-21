@@ -1,0 +1,97 @@
+// each item is separated by a :. do not add extra white spaces before or after separators
+// enterprise  Name
+MavBoy Inc.
+//
+//#employees, #items, #customers
+//5:10:10
+// EMPLOYEE DETAILS: 1 LINE EACH
+/* emp type: fname : lname : dob : gender : hire date : base salary : value
+PLAYER:Tony:Romo:4-1-1978:male:4-7-2007:20000.00:4000.00
+SUPPORT:james:bond:12-10-1976:male:2-20-2005:2200.00:40.00
+SUPPORT:anne:haathaway:08-13-1984:female:10-24-2006:2500.00:30.00
+SALES:katy:dough:07-1-1982:female:11-9-2006:0.00:40.00
+PLAYER:Dez:Bryant:11-13-1980:male:1-2-2010:18000.00:3000.00
+end
+//
+//ITEMS: 1 LINES PER Item AS GIVEN BELOW
+/* item id: item name: department: price : size : type : quantity
+jersey101:jersey:merchandise:30.00:L:NA:200
+jersey102:jersey:merchandise:40.00:M:NA:150
+ticket101:season ticket:ticketing:3000.00:NA:General:200
+ticket102:season ticket:ticketing:10000.00:NA:Box:200
+ticket201:normal ticket:ticketing:500.00:NA:Box:2000
+ticket202:normal ticket:ticketing:200.00:NA:General:2000
+cap101:cap:merchandise:10.00:L:NA:100
+cap102:cap:merchandise:10.00:M:NA:100
+sweatshirt101:jacket:merchandise:30.00:S:NA:100
+sweatshirt102:jacket:merchandise:30.00:M:NA:500
+end
+//
+/* Customer_id, fname, lname, dob, gender, customer type, cust since, address (house #:street:city:state)
+111:Mary:Jones:1-1-1978:female:GOLD:1-20-2009:500:UTA Blvd.:Arlington:TX
+222:Duke:Tom:7-1-1976:male:GOLD:2-29-2012:415:London Ave.:Sacramento:CA
+333:William:Mars:6-12-1973:male:REGULAR:10-01-2013:300:wall st.:New York:NY
+112:Cicilia:David:2-18-1978:female:GOLD:11-11-2014:101:Byron Nelson Pkwy.:Southlake:TX
+444:Sally:Johnson:6-15-1979:female:GOLD:12-11-2014:209:Moscow Ln.:highland park:IL
+113:Nicole:Sam:1-5-1983:female:REGULAR:09-19-2013:303:Josey Ln.:Dallas:TX
+223:David:Joseph:2-12-1971:male:REGULAR:1-20-2009:1200:Famous St.:Hollywood:CA
+334:Peter:Jim:1-11-1985:male:REGULAR:11-11-2014:43:Las Vegas St.:Schnectady:NY
+445:Max:Jones:12-2-1981:male:REGULAR:12-11-2014:219:Lincoln Pl.:Naperville:IL
+224:Domino:Par:11-13-1980:male:REGULAR:08-08-2013:666:Exorcist Ave.:anaheim:CA
+end
+//
+//start the menu
+10
+/*menu_no,Customer_id,item_id,date,quantity
+11:111:jersey101:6-30-2015:2
+11:111:jersey102:*:40
+11:111:ticket201:9-21-2014:10
+11:111:cap101:10-2-2015:10
+11:222:cap101:2-28-2015:10
+11:113:sweatshirt101:4-22-2015:25
+11:112:ticket101:9-23-2015:30
+11:112:ticket202:*:10
+11:445:cap102:8-23-2015:80
+11:445:sweatshirt102:7-23-2015:20
+11:445:jersey102:9-18-2015:100
+11:112:ticket201:3-19-2015:30
+/*
+/*menu_no,Customer_id,year
+12:113:2015
+12:112:2015
+12:111:*
+12:445:*
+/*
+/*menu_no,employee type, fname, lname, dob, gender, hire date, base salary,double value
+13:SALES:John:Hopkins:3-30-1987:MaLe:2-26-2013:0.00:30.00
+13:SALES:Jason:Davis:6-30-1965:malE:2-25-2012:0.00:25.00
+13:SUPPORT:Mariana:Struts:2-29-1988:feMaLe:2-25-2012:500.00:30.00
+13:SUPPORT:Kate:Wayne:3-23-1983:FEmalE:4-23-2014:700.00:35.00
+13:PLAYER:Cole:Beasley:4-3-1978:MalE:1-1-2011:15000.00:2500.00
+13:PLAYER:Matt:Cassel:9-1-1980:MaLe:2-21-2012:16000.00:4000.00
+/*
+/*menu_no,employee id
+14:2
+14:6
+14:13
+/*
+/*menu_no,employee id, salary parameter
+15:1:2
+15:2:160
+15:5:3
+15:7:200
+15:10:4
+/*
+/*menu_no, item id
+16:jersey101
+16:ticket101
+16:cap102
+16:sweatshirt101
+16:ticket202
+/*
+/*menu_no, client id, year
+17:111:2015
+17:*:*
+17:445:2015
+/*
+0

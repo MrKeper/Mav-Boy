@@ -1,0 +1,12 @@
+Keenan Parker
+1001024878
+CSE 1325-001
+project 4
+Around 6 hours spent on project
+Logical Mistakes:
+
+1: Not enough grid spaces allocated for grid layout, needed to have size of array list +1 more for total revenue but forgot to add +1
+
+2: created button and action listener but did not addActionListener so it did nothing... so I added the listener
+
+3: used close() to get rid of window opened by action button and it ended program. So i used dispose()
